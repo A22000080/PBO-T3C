@@ -1,20 +1,22 @@
 class Hero:
 
-    jumlah = 0
+    # class variabel
+    jumlah = 0 
     __privateJumlah = 0
 
     def __init__(self,name,health):
         self.name = name
         self.health = health
 
-        #variabel instance private
+        # variabel instance private
         self.__private = "private"
-        #variabel instance protected
+        # variable instance protected
         self._protected = "protected"
 
 
-lina = Hero("lina",100)
 
-print(lina.__dict__)
+Thor = Hero("Thor",100)
+
+print(Thor.__dict__)
 print(Hero.__dict__)
-print(Hero.__PrivateJumlah__)
+print(Hero.__privateJumlah)

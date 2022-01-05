@@ -1,5 +1,6 @@
 class Hero:
 
+    # class variable
     jumlah = 0
     __privateJumlah = 0
 
@@ -7,14 +8,15 @@ class Hero:
         self.name = name
         self.health = health
 
-        #variabel instance private
-        self.__private = "private"
-        #variabel instance protected
+        # variable instance private
+        self.__private = "private"        
+        # variable instance protected
         self._protected = "protected"
 
 
-lina = Hero("lina",100)
+
+lina = Hero("Lina", 100)
 
 print(lina.__dict__)
 print(Hero.__dict__)
-print(Hero.__PrivateJumlah__)
+print(Hero.__privateJumlah)

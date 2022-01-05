@@ -1,7 +1,7 @@
 class Hero:
 
     jumlah = 0
-    __privateJumlah = 0
+    __privatejumlah = 0
 
     def __init__(self,name,health):
         self.name = name
@@ -13,8 +13,8 @@ class Hero:
         self._protected = "protected"
 
 
-lina = Hero("lina",100)
+Gatotkaca = Hero("Gatotkaca",100)
 
-print(lina.__dict__)
+print(Gatotkaca.__dict__)
 print(Hero.__dict__)
-print(Hero.__PrivateJumlah__)
+print(Hero.__privatejumlah)
